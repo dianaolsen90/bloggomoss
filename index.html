@@ -34,6 +34,9 @@ a{color:inherit}
 .cat-ribbon a:not(:first-child):hover{background:#f5f5f5}
 .cat-ribbon a.active{background:#ea580c}
 .cat-ribbon a.active span{color:#fff}
+.nav-nb{margin-left:auto;background:transparent!important;padding:7px 14px!important;border-left:1px solid #ddd}
+.nav-nb span{font-size:10px;color:#ea580c!important;font-weight:700!important;letter-spacing:.1em;text-transform:uppercase}
+.nav-nb:hover{background:#f5f5f5!important}
 .container{max-width:1160px;margin:0 auto;padding:0 2rem}
 .container-narrow{max-width:1100px;margin:0 auto;padding:0 2rem}
 footer{background:#111;color:#fff;padding:3rem 2rem 2rem;border-top:4px solid #ea580c}
@@ -164,7 +167,28 @@ aside .sb-title{font-size:9px;font-weight:700;letter-spacing:.15em;color:#cc0000
 .form-group input,.form-group textarea{width:100%;padding:8px;border:1px solid #ddd;font-family:inherit;font-size:14px}
 .form-btn{background:#ea580c;color:#fff;border:none;padding:10px 20px;font-weight:700;cursor:pointer;font-size:13px;letter-spacing:.06em;text-transform:uppercase}
 .form-btn:hover{background:#cc0000}
+.form-btn-dark{background:#111;color:#fff}
+.form-btn-dark:hover{background:#333}
 .author-card{border-top:1px solid #e0e0e0;padding:1.5rem 0;margin-bottom:0}
+.policy-box{background:#111;padding:1.5rem;margin:2rem 0}
+.policy-box h3{font-size:9px;font-weight:700;letter-spacing:.15em;color:#ea580c;text-transform:uppercase;margin-bottom:8px}
+.policy-box p{font-size:13px;color:#888;line-height:1.65;margin:0}
+.contact-note{background:#ea580c;color:#fff;padding:1rem;margin:1rem 0 1.5rem;font-size:14px;line-height:1.5}
+.newsletter-page{max-width:600px;margin:0 auto;padding:4rem 2rem}
+.newsletter-page h1{font-family:'Playfair Display',serif;font-weight:900;text-transform:uppercase;margin-bottom:1rem}
+.newsletter-page .subtext{font-size:14px;color:#555;line-height:1.65;margin-bottom:2rem}
+.newsletter-page .form-note{font-size:11px;color:#888;margin-top:1rem}
+.faq-item{border-bottom:1px solid #e0e0e0}
+.faq-q{width:100%;background:none;border:none;padding:14px 0;text-align:left;font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:#111;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.faq-q::after{content:'+';font-size:18px;color:#ea580c;font-weight:400}
+.faq-item.open .faq-q::after{content:'−'}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease}
+.faq-a-inner{padding:0 0 14px;font-size:14px;color:#444;line-height:1.65}
+.faq-item.open .faq-a{max-height:200px}
+.review-card{border-left:3px solid #ea580c;padding:10px 14px;margin:1rem 0;background:#fffaf7}
+.review-card.neg{border-left-color:#ccc;background:#fafafa}
+.review-card p{margin:0;font-size:14px;color:#555;font-style:italic;line-height:1.65}
+.review-meta{font-size:10px;color:#999;margin-top:6px;font-style:normal}
 @media(max-width:1024px){.article-grid{grid-template-columns:1fr}aside{display:none}.related-grid{grid-template-columns:repeat(2,1fr)}.rel-card{border-right:none;padding:0 0 16px;margin-bottom:16px;border-bottom:1px solid #ddd}.rel-card:last-child{border-bottom:none}}
 @media(max-width:768px){.trust-bar{grid-template-columns:repeat(2,1fr)}.trust-cell:nth-child(2){border-right:none}.trust-cell:nth-child(3),.trust-cell:nth-child(4){border-top:1px solid #ddd}.pc{grid-template-columns:1fr}.related-grid{grid-template-columns:1fr}.cat-item{grid-template-columns:90px 1fr}}
 
@@ -202,7 +226,7 @@ aside .sb-title{font-size:9px;font-weight:700;letter-spacing:.15em;color:#cc0000
 </style>
 </head>
 <body>
-<div class="breaking-bar"><span class="breaking-label">SENASTE</span><span class="breaking-text">MiniLux Pro 2 testad: native 1080P och 390 ANSI lumen</span><span class="breaking-date">29 maj 2026</span></div><div class="masthead"><a class="masthead-name" href="index.html">PROJEKTORGUIDEN<span class="se">.SE</span></a><div class="masthead-rule"><span class="masthead-tagline">Oberoende teknikjournalistik sedan 2023</span></div></div><div class="cat-ribbon"><a href="index.html" class="active"><span>Alla</span></a><a href="kategori-guider.html"><span>Guider</span></a><a href="kategori-recensioner.html"><span>Recensioner</span></a><a href="kategori-tips.html"><span>Tips</span></a><a href="kategori-teknik.html"><span>Teknik</span></a><a href="kategori-jamforelser.html"><span>Jämförelser</span></a><a href="kategori-hemmabio.html"><span>Hemmabio</span></a><a href="kategori-gaming.html"><span>Gaming</span></a></div>
+<div class="breaking-bar"><span class="breaking-label">SENASTE</span><span class="breaking-text">MiniLux Pro 2 testad: native 1080P och 390 ANSI lumen</span><span class="breaking-date">29 maj 2026</span></div><div class="masthead"><a class="masthead-name" href="index.html">PROJEKTORGUIDEN<span class="se">.SE</span></a><div class="masthead-rule"><span class="masthead-tagline">Oberoende teknikjournalistik sedan 2023</span></div></div><div class="cat-ribbon"><a href="index.html" class="active"><span>Alla</span></a><a href="kategori-guider.html"><span>Guider</span></a><a href="kategori-recensioner.html"><span>Recensioner</span></a><a href="kategori-tips.html"><span>Tips</span></a><a href="kategori-teknik.html"><span>Teknik</span></a><a href="kategori-jamforelser.html"><span>Jämförelser</span></a><a href="kategori-hemmabio.html"><span>Hemmabio</span></a><a href="kategori-gaming.html"><span>Gaming</span></a><a href="nyhetsbrev.html" class="nav-nb"><span>Nyhetsbrev</span></a></div>
 <div class="container">
 <div class="paper-grid">
 <div class="col-main">
@@ -214,32 +238,32 @@ aside .sb-title{font-size:9px;font-weight:700;letter-spacing:.15em;color:#cc0000
 <a class="read-more" href="basta-projektorer-2026.html">Läs hela artikeln →</a>
 </div>
 <div class="col-divider"></div>
-<div class="col-secondary"><a class="sec-story" href="miniprojektor-se-recension.html"><span class="sec-cat">Recension</span><div class="sec-headline">Miniprojektor.se recension: pålitlig butik för projektorer?</div><div class="sec-byline">Av Erik Lindström, 24 maj 2026</div></a><a class="sec-story" href="miniprojektor-se-omdome.html"><span class="sec-cat">Omdöme</span><div class="sec-headline">Miniprojektor.se omdöme: vad säger svenska köpare?</div><div class="sec-byline">Av Per Bergman, 26 maj 2026</div></a><a class="sec-story" href="minilux-pro-recension.html"><span class="sec-cat">Recension</span><div class="sec-headline">MiniLux Pro testad: vi använde den i 30 dagar i verkliga miljöer</div><div class="sec-byline">Av Per Bergman, 15 maj 2026</div></a><a class="sec-story" href="minilux-pro-2-recension.html"><span class="sec-cat">Recension</span><div class="sec-headline">MiniLux Pro 2 recension: native 1080P och 390 ANSI testad</div><div class="sec-byline">Av Erik Lindström, 8 maj 2026</div></a><a class="sec-story" href="varfor-kopa-projektor.html"><span class="sec-cat">Guide</span><div class="sec-headline">Varför du ska köpa en projektor istället för en stor-TV</div><div class="sec-byline">Av Anna Svensson, 10 maj 2026</div></a><a class="sec-story" href="hemmabio-budget.html"><span class="sec-cat">Guide</span><div class="sec-headline">Hemmabio under 5000 kr: så bygger du det smartaste upplaget</div><div class="sec-byline">Av Anna Svensson, 26 apr 2026</div></a><a class="sec-story" href="ansi-lumen-guide.html"><span class="sec-cat">Teknik</span><div class="sec-headline">Vad är ANSI Lumen och hur mycket ljusstyrka behöver du egentligen?</div><div class="sec-byline">Av Erik Lindström, 20 apr 2026</div></a><a class="sec-story" href="projektor-sovrum.html"><span class="sec-cat">Guide</span><div class="sec-headline">Projektor i sovrummet: allt du behöver veta för att lyckas</div><div class="sec-byline">Av Anna Svensson, 15 apr 2026</div></a></div>
+<div class="col-secondary"><a class="sec-story" href="miniprojektor-se-omdome.html"><span class="sec-cat">Omdöme</span><div class="sec-headline">Miniprojektor.se omdöme: vad säger svenska köpare?</div><div class="sec-byline">Av Per Bergman, 26 maj 2026</div></a><a class="sec-story" href="miniprojektor-se-recension.html"><span class="sec-cat">Recension</span><div class="sec-headline">Miniprojektor.se recension: pålitlig butik för projektorer?</div><div class="sec-byline">Av Erik Lindström, 24 maj 2026</div></a><a class="sec-story" href="minilux-pro-2-recension.html"><span class="sec-cat">Recension</span><div class="sec-headline">MiniLux Pro 2 recension 2026: native 1080P och 390 ANSI testad</div><div class="sec-byline">Av Erik Lindström, 22 maj 2026</div></a><a class="sec-story" href="minilux-pro-recension.html"><span class="sec-cat">Recension</span><div class="sec-headline">MiniLux Pro recension 2026: 200 ANSI Lumen i 30 dagars test</div><div class="sec-byline">Av Per Bergman, 16 maj 2026</div></a><a class="sec-story" href="varfor-kopa-projektor.html"><span class="sec-cat">Guide</span><div class="sec-headline">Varför du ska köpa en projektor istället för en stor-TV 2026</div><div class="sec-byline">Av Anna Svensson, 8 maj 2026</div></a><a class="sec-story" href="ansi-lumen-guide.html"><span class="sec-cat">Teknik</span><div class="sec-headline">ANSI Lumen förklarat 2026: hur mycket ljusstyrka behöver du?</div><div class="sec-byline">Av Erik Lindström, 4 maj 2026</div></a></div>
 <div class="col-divider"></div>
 <div class="col-sidebar"><div class="sb-section"><div class="sb-title">Mest läst</div><ul class="sb-posts">
-<li><a href="miniprojektor-se-recension.html"><span class="sb-rank">01</span><div><div class="sb-link-title">Miniprojektor.se recension</div></div></a></li>
-<li><a href="miniprojektor-se-omdome.html"><span class="sb-rank">02</span><div><div class="sb-link-title">Miniprojektor.se omdöme</div></div></a></li>
-<li><a href="minilux-pro-recension.html"><span class="sb-rank">03</span><div><div class="sb-link-title">MiniLux Pro recension</div></div></a></li>
+<li><a href="minilux-pro-recension.html"><span class="sb-rank">01</span><div><div class="sb-link-title">MiniLux Pro recension</div></div></a></li>
+<li><a href="minilux-pro-2-recension.html"><span class="sb-rank">02</span><div><div class="sb-link-title">MiniLux Pro 2 recension</div></div></a></li>
+<li><a href="miniprojektor-se-recension.html"><span class="sb-rank">03</span><div><div class="sb-link-title">Miniprojektor.se recension</div></div></a></li>
 <li><a href="basta-projektorer-2026.html"><span class="sb-rank">04</span><div><div class="sb-link-title">Bästa projektorerna 2026</div></div></a></li>
-<li><a href="varfor-kopa-projektor.html"><span class="sb-rank">05</span><div><div class="sb-link-title">Varför välja projektor</div></div></a></li>
-</ul></div><div class="newsletter-box"><div class="newsletter-title">NYHETSBREV</div><p class="newsletter-sub">Veckans bästa artiklar direkt i inkorgen</p><a class="newsletter-btn" href="kontakt.html">PRENUMERERA</a></div></div>
+<li><a href="ansi-lumen-guide.html"><span class="sb-rank">05</span><div><div class="sb-link-title">ANSI Lumen förklarat</div></div></a></li>
+</ul></div><div class="newsletter-box"><div class="newsletter-title">NYHETSBREV</div><p class="newsletter-sub">Veckans bästa artiklar direkt i inkorgen</p><a class="newsletter-btn" href="nyhetsbrev.html">PRENUMERERA</a></div></div>
 </div>
 <hr class="section-rule"/>
 <div class="more-section">
 <div class="more-label">Fler artiklar</div>
-<div class="more-grid"><a class="more-item" href="miniprojektor-se-omdome.html"><span class="more-cat cat-rec">Omdöme</span><div class="more-headline">Miniprojektor.se omdöme: äkta kundröster och vår analys</div><div class="more-author">Per Bergman</div></a><a class="more-item" href="utomhusbio-guide.html"><span class="more-cat cat-tips">Tips</span><div class="more-headline">Utomhusbio hemma: så sätter du upp en perfekt biokväll på terrassen</div><div class="more-author">Per Bergman</div></a><a class="more-item" href="minilux-pro-2-vs-pro.html"><span class="more-cat cat-jmf">Jämförelse</span><div class="more-headline">MiniLux Pro 2 vs Pro: är uppgraderingen värd 500 kr?</div><div class="more-author">Anna Svensson</div></a><a class="more-item" href="projektor-gaming.html"><span class="more-cat cat-game">Gaming</span><div class="more-headline">Projektor för gaming: input lag, Hz och vad du måste ha koll på</div><div class="more-author">Per Bergman</div></a><a class="more-item" href="keystone-guide.html"><span class="more-cat cat-tech">Teknik</span><div class="more-headline">Keystone-korrigering förklarat: så får du en rektangulär bild varje gång</div><div class="more-author">Per Bergman</div></a><a class="more-item" href="projektor-vs-tv.html"><span class="more-cat cat-jmf">Jämförelse</span><div class="more-headline">Projektor eller TV: en ärlig jämförelse utan reklamlöften</div><div class="more-author">Anna Svensson</div></a><a class="more-item" href="projiceringsduk-guide.html"><span class="more-cat cat-guide">Guide</span><div class="more-headline">Välja projiceringsduk: storlek, material och vad du faktiskt behöver</div><div class="more-author">Anna Svensson</div></a><a class="more-item" href="ljud-projektor.html"><span class="more-cat cat-tips">Tips</span><div class="more-headline">Så får du bra ljud till din projektor: tre alternativ för olika behov</div><div class="more-author">Erik Lindström</div></a><a class="more-item" href="optimera-rummet.html"><span class="more-cat cat-tips">Tips</span><div class="more-headline">8 enkla sätt att optimera rummet för bättre projektor-bild</div><div class="more-author">Per Bergman</div></a><a class="more-item" href="4k-vs-1080p.html"><span class="more-cat cat-tech">Teknik</span><div class="more-headline">4K, 1080p eller 720p: vilken upplösning räcker för din setup?</div><div class="more-author">Erik Lindström</div></a><a class="more-item" href="wifi-streaming.html"><span class="more-cat cat-tech">Teknik</span><div class="more-headline">WiFi-streaming till projektor: WiFi 6 och stabilt hemmabio</div><div class="more-author">Erik Lindström</div></a></div>
+<div class="more-grid"><a class="more-item" href="miniprojektor-se-omdome.html"><span class="more-cat cat-rec">Omdöme</span><div class="more-headline">Miniprojektor.se omdöme: äkta kundröster och vår analys</div><div class="more-author">Per Bergman</div></a><a class="more-item" href="hemmabio-budget.html"><span class="more-cat cat-guide">Guide</span><div class="more-headline">Hemmabio under 5000 kr: smartaste upplaget 2026</div><div class="more-author">Anna Svensson</div></a><a class="more-item" href="projektor-sovrum.html"><span class="more-cat cat-guide">Guide</span><div class="more-headline">Projektor i sovrummet: allt du behöver veta 2026</div><div class="more-author">Anna Svensson</div></a><a class="more-item" href="utomhusbio-guide.html"><span class="more-cat cat-tips">Tips</span><div class="more-headline">Utomhusbio hemma: perfekt biokväll på terrassen</div><div class="more-author">Per Bergman</div></a><a class="more-item" href="minilux-pro-2-vs-pro.html"><span class="more-cat cat-jmf">Jämförelse</span><div class="more-headline">MiniLux Pro 2 vs Pro: är uppgraderingen värd 500 kr?</div><div class="more-author">Anna Svensson</div></a><a class="more-item" href="projektor-gaming.html"><span class="more-cat cat-game">Gaming</span><div class="more-headline">Projektor för gaming: input lag och Hz</div><div class="more-author">Per Bergman</div></a><a class="more-item" href="keystone-guide.html"><span class="more-cat cat-tech">Teknik</span><div class="more-headline">Keystone-korrigering förklarat</div><div class="more-author">Per Bergman</div></a><a class="more-item" href="projektor-vs-tv.html"><span class="more-cat cat-jmf">Jämförelse</span><div class="more-headline">Projektor eller TV: ärlig jämförelse 2026</div><div class="more-author">Anna Svensson</div></a><a class="more-item" href="projiceringsduk-guide.html"><span class="more-cat cat-guide">Guide</span><div class="more-headline">Välja projiceringsduk: vad du behöver</div><div class="more-author">Anna Svensson</div></a><a class="more-item" href="ljud-projektor.html"><span class="more-cat cat-tips">Tips</span><div class="more-headline">Bra ljud till projektor: tre alternativ</div><div class="more-author">Erik Lindström</div></a><a class="more-item" href="optimera-rummet.html"><span class="more-cat cat-tips">Tips</span><div class="more-headline">Optimera rummet för bättre projektor-bild</div><div class="more-author">Per Bergman</div></a><a class="more-item" href="4k-vs-1080p.html"><span class="more-cat cat-tech">Teknik</span><div class="more-headline">4K vs 1080p 2026: vilken upplösning räcker?</div><div class="more-author">Erik Lindström</div></a><a class="more-item" href="wifi-streaming.html"><span class="more-cat cat-tech">Teknik</span><div class="more-headline">WiFi-streaming till projektor: WiFi 6 guide</div><div class="more-author">Erik Lindström</div></a></div>
 </div>
 </div>
 <footer><div class="footer-inner"><div class="footer-grid">
 <div><div class="footer-brand">PROJEKTORGUIDEN<span class="se">.SE</span></div>
-<p class="footer-about">Oberoende teknikblogg om projektorer sedan 2023. Vi testar och granskar utan koppling till butiker.</p></div>
+<p class="footer-about">Oberoende projektortester och köpguider sedan 2023. Vi granskar utan reklamlöften och köper alltid produkterna med egna medel.</p></div>
 <div class="footer-col"><h4>Populära artiklar</h4>
-<a href="miniprojektor-se-recension.html">Miniprojektor.se recension</a>
-<a href="miniprojektor-se-omdome.html">Miniprojektor.se omdöme</a>
 <a href="minilux-pro-recension.html">MiniLux Pro recension</a>
 <a href="minilux-pro-2-recension.html">MiniLux Pro 2 recension</a>
+<a href="miniprojektor-se-recension.html">Miniprojektor.se recension</a>
 <a href="basta-projektorer-2026.html">Bästa projektorer 2026</a>
 <a href="varfor-kopa-projektor.html">Varför välja projektor</a>
+<a href="ansi-lumen-guide.html">ANSI Lumen förklarat</a>
 </div>
 <div class="footer-col"><h4>Kategorier</h4>
 <a href="kategori-guider.html">Guider</a>
@@ -250,7 +274,7 @@ aside .sb-title{font-size:9px;font-weight:700;letter-spacing:.15em;color:#cc0000
 <a href="kategori-hemmabio.html">Hemmabio</a>
 </div></div>
 <div class="footer-bottom">
-<p>&copy; 2026 projektorguiden.se — Oberoende granskning</p>
+<p>&copy; 2026 projektorguiden.se. Oberoende projektorgranskning.</p>
 <p><a href="om-oss.html">Om oss</a> · <a href="kontakt.html">Kontakt</a> · <a href="integritetspolicy.html">Integritetspolicy</a></p>
 </div></div></footer>
 </body></html>

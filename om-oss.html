@@ -34,6 +34,9 @@ a{color:inherit}
 .cat-ribbon a:not(:first-child):hover{background:#f5f5f5}
 .cat-ribbon a.active{background:#ea580c}
 .cat-ribbon a.active span{color:#fff}
+.nav-nb{margin-left:auto;background:transparent!important;padding:7px 14px!important;border-left:1px solid #ddd}
+.nav-nb span{font-size:10px;color:#ea580c!important;font-weight:700!important;letter-spacing:.1em;text-transform:uppercase}
+.nav-nb:hover{background:#f5f5f5!important}
 .container{max-width:1160px;margin:0 auto;padding:0 2rem}
 .container-narrow{max-width:1100px;margin:0 auto;padding:0 2rem}
 footer{background:#111;color:#fff;padding:3rem 2rem 2rem;border-top:4px solid #ea580c}
@@ -164,16 +167,39 @@ aside .sb-title{font-size:9px;font-weight:700;letter-spacing:.15em;color:#cc0000
 .form-group input,.form-group textarea{width:100%;padding:8px;border:1px solid #ddd;font-family:inherit;font-size:14px}
 .form-btn{background:#ea580c;color:#fff;border:none;padding:10px 20px;font-weight:700;cursor:pointer;font-size:13px;letter-spacing:.06em;text-transform:uppercase}
 .form-btn:hover{background:#cc0000}
+.form-btn-dark{background:#111;color:#fff}
+.form-btn-dark:hover{background:#333}
 .author-card{border-top:1px solid #e0e0e0;padding:1.5rem 0;margin-bottom:0}
+.policy-box{background:#111;padding:1.5rem;margin:2rem 0}
+.policy-box h3{font-size:9px;font-weight:700;letter-spacing:.15em;color:#ea580c;text-transform:uppercase;margin-bottom:8px}
+.policy-box p{font-size:13px;color:#888;line-height:1.65;margin:0}
+.contact-note{background:#ea580c;color:#fff;padding:1rem;margin:1rem 0 1.5rem;font-size:14px;line-height:1.5}
+.newsletter-page{max-width:600px;margin:0 auto;padding:4rem 2rem}
+.newsletter-page h1{font-family:'Playfair Display',serif;font-weight:900;text-transform:uppercase;margin-bottom:1rem}
+.newsletter-page .subtext{font-size:14px;color:#555;line-height:1.65;margin-bottom:2rem}
+.newsletter-page .form-note{font-size:11px;color:#888;margin-top:1rem}
+.faq-item{border-bottom:1px solid #e0e0e0}
+.faq-q{width:100%;background:none;border:none;padding:14px 0;text-align:left;font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:#111;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.faq-q::after{content:'+';font-size:18px;color:#ea580c;font-weight:400}
+.faq-item.open .faq-q::after{content:'−'}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease}
+.faq-a-inner{padding:0 0 14px;font-size:14px;color:#444;line-height:1.65}
+.faq-item.open .faq-a{max-height:200px}
+.review-card{border-left:3px solid #ea580c;padding:10px 14px;margin:1rem 0;background:#fffaf7}
+.review-card.neg{border-left-color:#ccc;background:#fafafa}
+.review-card p{margin:0;font-size:14px;color:#555;font-style:italic;line-height:1.65}
+.review-meta{font-size:10px;color:#999;margin-top:6px;font-style:normal}
 @media(max-width:1024px){.article-grid{grid-template-columns:1fr}aside{display:none}.related-grid{grid-template-columns:repeat(2,1fr)}.rel-card{border-right:none;padding:0 0 16px;margin-bottom:16px;border-bottom:1px solid #ddd}.rel-card:last-child{border-bottom:none}}
 @media(max-width:768px){.trust-bar{grid-template-columns:repeat(2,1fr)}.trust-cell:nth-child(2){border-right:none}.trust-cell:nth-child(3),.trust-cell:nth-child(4){border-top:1px solid #ddd}.pc{grid-template-columns:1fr}.related-grid{grid-template-columns:1fr}.cat-item{grid-template-columns:90px 1fr}}
 </style>
 </head>
 <body>
-<div class="breaking-bar"><span class="breaking-label">SENASTE</span><span class="breaking-text">MiniLux Pro 2 testad: native 1080P och 390 ANSI lumen</span><span class="breaking-date">29 maj 2026</span></div><div class="compact-brand"><a href="index.html">PROJEKTORGUIDEN<span class="se">.SE</span></a></div><div class="cat-ribbon"><a href="index.html" class="active"><span>Alla</span></a><a href="kategori-guider.html"><span>Guider</span></a><a href="kategori-recensioner.html"><span>Recensioner</span></a><a href="kategori-tips.html"><span>Tips</span></a><a href="kategori-teknik.html"><span>Teknik</span></a><a href="kategori-jamforelser.html"><span>Jämförelser</span></a><a href="kategori-hemmabio.html"><span>Hemmabio</span></a><a href="kategori-gaming.html"><span>Gaming</span></a></div>
-<div class="container-narrow page-main">
-<h1>Om projektorguiden.se</h1>
-<p style="margin:1rem 0 2rem;color:#555">Vi är en oberoende svensk blogg om projektorer och hemmabio. Alla produkter vi recenserar köps med egna medel. Vi tar inte betalt för positiva omdömen.</p>
+<div class="breaking-bar"><span class="breaking-label">SENASTE</span><span class="breaking-text">MiniLux Pro 2 testad: native 1080P och 390 ANSI lumen</span><span class="breaking-date">29 maj 2026</span></div><div class="compact-brand"><a href="index.html">PROJEKTORGUIDEN<span class="se">.SE</span></a></div><div class="cat-ribbon"><a href="index.html" class="active"><span>Alla</span></a><a href="kategori-guider.html"><span>Guider</span></a><a href="kategori-recensioner.html"><span>Recensioner</span></a><a href="kategori-tips.html"><span>Tips</span></a><a href="kategori-teknik.html"><span>Teknik</span></a><a href="kategori-jamforelser.html"><span>Jämförelser</span></a><a href="kategori-hemmabio.html"><span>Hemmabio</span></a><a href="kategori-gaming.html"><span>Gaming</span></a><a href="nyhetsbrev.html" class="nav-nb"><span>Nyhetsbrev</span></a></div>
+<div class="container-narrow page-main" style="text-align:center">
+<h1 style="font-family:'Playfair Display',serif;font-weight:900;text-transform:uppercase">Om projektorguiden.se</h1>
+<p style="margin:1.5rem auto 2.5rem;color:#555;max-width:600px;text-align:left;line-height:1.75">Vi är en oberoende blogg om projektorer sedan 2023. Vi köper alla produkter med egna medel. Ingen koppling till butiker eller tillverkare. Ingen betald marknadsföring.</p>
+</div>
+<div class="container-narrow page-main" style="padding-top:0">
 <div class="author-card"><div class="author-bio" style="border:none;padding:0;margin:0"><div class="av-lg">EL</div><div>
 <div class="bio-expert-tag">Teknikskribent</div>
 <div class="bio-name">Erik Lindström</div>
@@ -183,16 +209,6 @@ aside .sb-title{font-size:9px;font-weight:700;letter-spacing:.15em;color:#cc0000
 <div class="bio-stat"><strong>11 år</strong><span>Erfarenhet</span></div>
 <div class="bio-stat"><strong>220+</strong><span>Produkter testade</span></div>
 <div class="bio-stat"><strong>60+</strong><span>Projektorer</span></div>
-</div></div></div></div>
-<div class="author-card"><div class="author-bio" style="border:none;padding:0;margin:0"><div class="av-lg">AS</div><div>
-<div class="bio-expert-tag">Köpguider</div>
-<div class="bio-name">Anna Svensson</div>
-<div class="bio-title">Teknikskribent, projektorguiden.se</div>
-<p class="bio-text">Anna Svensson är teknikskribent med 7 års erfarenhet och utbildning inom medie- och kommunikationsvetenskap. Hon specialiserar sig på köpguider och konsumentvägledning för familjer och förstagångsköpare.</p>
-<div class="bio-stats">
-<div class="bio-stat"><strong>7 år</strong><span>Erfarenhet</span></div>
-<div class="bio-stat"><strong>140+</strong><span>Artiklar</span></div>
-<div class="bio-stat"><strong>30+</strong><span>Projektorer</span></div>
 </div></div></div></div>
 <div class="author-card"><div class="author-bio" style="border:none;padding:0;margin:0"><div class="av-lg">PB</div><div>
 <div class="bio-expert-tag">Teknikexpert</div>
@@ -204,17 +220,28 @@ aside .sb-title{font-size:9px;font-weight:700;letter-spacing:.15em;color:#cc0000
 <div class="bio-stat"><strong>180+</strong><span>Produkter testade</span></div>
 <div class="bio-stat"><strong>50+</strong><span>Projektorer</span></div>
 </div></div></div></div>
+<div class="author-card"><div class="author-bio" style="border:none;padding:0;margin:0"><div class="av-lg">AS</div><div>
+<div class="bio-expert-tag">Köpguider</div>
+<div class="bio-name">Anna Svensson</div>
+<div class="bio-title">Teknikskribent, projektorguiden.se</div>
+<p class="bio-text">Anna Svensson är teknikskribent med 7 års erfarenhet och utbildning inom medie- och kommunikationsvetenskap. Hon specialiserar sig på köpguider och konsumentvägledning för familjer och förstagångsköpare.</p>
+<div class="bio-stats">
+<div class="bio-stat"><strong>7 år</strong><span>Erfarenhet</span></div>
+<div class="bio-stat"><strong>140+</strong><span>Artiklar</span></div>
+<div class="bio-stat"><strong>30+</strong><span>Projektorer</span></div>
+</div></div></div></div>
+<div class="policy-box"><h3>VÅR REDAKTIONELLA POLICY</h3><p>Vi köper alltid produkter med egna medel. Inga tillverkare eller butiker har ekonomiskt inflytande över vårt redaktionella innehåll.</p></div>
 </div>
 <footer><div class="footer-inner"><div class="footer-grid">
 <div><div class="footer-brand">PROJEKTORGUIDEN<span class="se">.SE</span></div>
-<p class="footer-about">Oberoende teknikblogg om projektorer sedan 2023. Vi testar och granskar utan koppling till butiker.</p></div>
+<p class="footer-about">Oberoende projektortester och köpguider sedan 2023. Vi granskar utan reklamlöften och köper alltid produkterna med egna medel.</p></div>
 <div class="footer-col"><h4>Populära artiklar</h4>
-<a href="miniprojektor-se-recension.html">Miniprojektor.se recension</a>
-<a href="miniprojektor-se-omdome.html">Miniprojektor.se omdöme</a>
 <a href="minilux-pro-recension.html">MiniLux Pro recension</a>
 <a href="minilux-pro-2-recension.html">MiniLux Pro 2 recension</a>
+<a href="miniprojektor-se-recension.html">Miniprojektor.se recension</a>
 <a href="basta-projektorer-2026.html">Bästa projektorer 2026</a>
 <a href="varfor-kopa-projektor.html">Varför välja projektor</a>
+<a href="ansi-lumen-guide.html">ANSI Lumen förklarat</a>
 </div>
 <div class="footer-col"><h4>Kategorier</h4>
 <a href="kategori-guider.html">Guider</a>
@@ -225,7 +252,7 @@ aside .sb-title{font-size:9px;font-weight:700;letter-spacing:.15em;color:#cc0000
 <a href="kategori-hemmabio.html">Hemmabio</a>
 </div></div>
 <div class="footer-bottom">
-<p>&copy; 2026 projektorguiden.se — Oberoende granskning</p>
+<p>&copy; 2026 projektorguiden.se. Oberoende projektorgranskning.</p>
 <p><a href="om-oss.html">Om oss</a> · <a href="kontakt.html">Kontakt</a> · <a href="integritetspolicy.html">Integritetspolicy</a></p>
 </div></div></footer>
 </body></html>
