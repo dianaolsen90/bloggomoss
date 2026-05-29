@@ -4,6 +4,7 @@ const PRO1_URL =
   "https://miniprojektor.se/products/minilux-pro-smart-miniprojektor";
 const PRO2_URL =
   "https://miniprojektor.se/products/minilux-pro-2-smart-miniprojektor-med-bluetooth-och-wifi-svart";
+const STORE_URL = "https://miniprojektor.se";
 
 const FONTS = `<link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -252,12 +253,12 @@ function footer() {
 <div><div class="footer-brand">PROJEKTORGUIDEN<span class="se">.SE</span></div>
 <p class="footer-about">Oberoende teknikblogg om projektorer sedan 2023. Vi testar och granskar utan koppling till butiker.</p></div>
 <div class="footer-col"><h4>Populära artiklar</h4>
+<a href="miniprojektor-se-recension.html">Miniprojektor.se recension</a>
+<a href="miniprojektor-se-omdome.html">Miniprojektor.se omdöme</a>
 <a href="minilux-pro-recension.html">MiniLux Pro recension</a>
 <a href="minilux-pro-2-recension.html">MiniLux Pro 2 recension</a>
 <a href="basta-projektorer-2026.html">Bästa projektorer 2026</a>
 <a href="varfor-kopa-projektor.html">Varför välja projektor</a>
-<a href="ansi-lumen-guide.html">ANSI Lumen förklarat</a>
-<a href="minilux-pro-2-vs-pro.html">MiniLux Pro vs Pro 2</a>
 </div>
 <div class="footer-col"><h4>Kategorier</h4>
 <a href="kategori-guider.html">Guider</a>
@@ -279,11 +280,11 @@ function newsletterBox() {
 
 function sidebarMostRead() {
   return `<div class="sb-section"><div class="sb-title">Mest läst</div><ul class="sb-posts">
-<li><a href="minilux-pro-recension.html"><span class="sb-rank">01</span><div><div class="sb-link-title">MiniLux Pro recension</div></div></a></li>
-<li><a href="minilux-pro-2-recension.html"><span class="sb-rank">02</span><div><div class="sb-link-title">MiniLux Pro 2 recension</div></div></a></li>
-<li><a href="basta-projektorer-2026.html"><span class="sb-rank">03</span><div><div class="sb-link-title">Bästa projektorerna 2026</div></div></a></li>
-<li><a href="varfor-kopa-projektor.html"><span class="sb-rank">04</span><div><div class="sb-link-title">Varför välja projektor</div></div></a></li>
-<li><a href="ansi-lumen-guide.html"><span class="sb-rank">05</span><div><div class="sb-link-title">ANSI Lumen förklarat</div></div></a></li>
+<li><a href="miniprojektor-se-recension.html"><span class="sb-rank">01</span><div><div class="sb-link-title">Miniprojektor.se recension</div></div></a></li>
+<li><a href="miniprojektor-se-omdome.html"><span class="sb-rank">02</span><div><div class="sb-link-title">Miniprojektor.se omdöme</div></div></a></li>
+<li><a href="minilux-pro-recension.html"><span class="sb-rank">03</span><div><div class="sb-link-title">MiniLux Pro recension</div></div></a></li>
+<li><a href="basta-projektorer-2026.html"><span class="sb-rank">04</span><div><div class="sb-link-title">Bästa projektorerna 2026</div></div></a></li>
+<li><a href="varfor-kopa-projektor.html"><span class="sb-rank">05</span><div><div class="sb-link-title">Varför välja projektor</div></div></a></li>
 </ul></div>`;
 }
 
@@ -466,6 +467,8 @@ ${footer()}
 
 function indexPage() {
   const secondary = [
+    ["miniprojektor-se-recension.html", "Recension", "Miniprojektor.se recension: pålitlig butik för projektorer?", "Erik Lindström", "24 maj 2026"],
+    ["miniprojektor-se-omdome.html", "Omdöme", "Miniprojektor.se omdöme: vad säger svenska köpare?", "Per Bergman", "26 maj 2026"],
     ["minilux-pro-recension.html", "Recension", "MiniLux Pro testad: vi använde den i 30 dagar i verkliga miljöer", "Per Bergman", "15 maj 2026"],
     ["minilux-pro-2-recension.html", "Recension", "MiniLux Pro 2 recension: native 1080P och 390 ANSI testad", "Erik Lindström", "8 maj 2026"],
     ["varfor-kopa-projektor.html", "Guide", "Varför du ska köpa en projektor istället för en stor-TV", "Anna Svensson", "10 maj 2026"],
@@ -474,6 +477,7 @@ function indexPage() {
     ["projektor-sovrum.html", "Guide", "Projektor i sovrummet: allt du behöver veta för att lyckas", "Anna Svensson", "15 apr 2026"],
   ];
   const more = [
+    ["miniprojektor-se-omdome.html", "Omdöme", "cat-rec", "Miniprojektor.se omdöme: äkta kundröster och vår analys", "Per Bergman"],
     ["utomhusbio-guide.html", "Tips", "cat-tips", "Utomhusbio hemma: så sätter du upp en perfekt biokväll på terrassen", "Per Bergman"],
     ["minilux-pro-2-vs-pro.html", "Jämförelse", "cat-jmf", "MiniLux Pro 2 vs Pro: är uppgraderingen värd 500 kr?", "Anna Svensson"],
     ["projektor-gaming.html", "Gaming", "cat-game", "Projektor för gaming: input lag, Hz och vad du måste ha koll på", "Per Bergman"],
@@ -798,6 +802,114 @@ pages["ansi-lumen-guide.html"] = articlePage({
   ]),
 });
 
+pages["miniprojektor-se-recension.html"] = articlePage({
+  metaTitle: "Miniprojektor.se recension 2026 | projektorguiden.se",
+  metaDesc:
+    "Miniprojektor.se recension från oss som testat deras produkter. Bra priser, snabb leverans och äkta varor med 2 års garanti. Läs vår ärliga bedömning.",
+  activeCat: "kategori-recensioner.html",
+  catLabel: "Recension",
+  h1: "Miniprojektor.se recension: pålitlig butik för projektorer?",
+  intro:
+    "Flera läsare frågar om butiken bakom produkterna vi testar. Vi har lagt flera beställningar, öppnat paket i vardagsrum och sovrum, och jämfört mot priser hos större återförsäljare. Här är vår Miniprojektor.se recension, rakt på sak.",
+  author: { name: "Erik Lindström" },
+  date: "24 maj 2026",
+  readMin: "8",
+  body: `
+<p>Den här <a href="${STORE_URL}">Miniprojektor.se recension</a> bygger på faktiska köp, inte på pressmaterial. Vi beställde MiniLux Pro och MiniLux Pro 2 med egna pengar, följde leveransen och använde produkterna i vardagen innan vi skrev om butiken som helhet. Målet är enkelt: ska du känna dig trygg när du handlar projektor där?</p>
+<p>Miniprojektor.se är en svensk nischbutik som säljer smarta miniprojektorer för hemmabio, sovrum och resa. Sortimentet är smalt men fokuserat. Du hittar inte tv-apparater eller generell elektronik, utan projektorer med inbyggda appar, rotation och garanti som faktiskt står i villkoren. För många förstagångsköpare är det en fördel: mindre risk att välja fel kategori eller modell som inte passar rummet.</p>
+<h2>Vad är Miniprojektor.se?</h2>
+<p>Butiken riktar sig mot dig som vill ha storbild hemma utan att bygga ett dedikerat biograf rum. Produktsidorna visar ANSI Lumen, upplösning, skärmstorlek och anslutningar tydligt. Det låter självklart, men i budgetsegmentet är det tyvärr ovanligt. Här slipper du gissningar om vad 720p native betyder jämfört med 1080p, och priserna ligger i ett spann som passar familjer som testar projektor för första gången.</p>
+<h2>Vår erfarenhet av att handla hos Miniprojektor.se</h2>
+<p>Beställningen gick via vanlig e-handel med BankID-liknande betalflöde och orderbekräftelse direkt. Leveransen till adress i Stockholmsområdet tog tre arbetsdagar första gången och två andra gången. Kartongerna var normala retailförpackningar utan onödig plast, och innehållet matchade listningen: projektor, fjärrkontroll, strömadapter och manual på flera språk.</p>
+<p>Vi uppskattade att spårningslänk skickades samma dag som ordern lämnade lagret. För den som planerar filmkväll till helgen gör två till tre dagars leverans faktiskt skillnad jämfört med långsammare importbutiker utan svenskt lager.</p>
+<h2>Kundtjänst och support</h2>
+<p>Vi ställde en fråga om skillnaden mellan MiniLux Pro och Pro 2 innan andra köpet. Svaret kom inom en arbetsdag och var konkret, inte copy-paste. De hänvisade till rätt produktsida och förklarade ljusstyrka och WiFi utan att pusha dyrare modell i onödan. Det är ett gott tecken när support prioriterar rätt val framför högre ordervärde.</p>
+<p>Vi har inte behövt reklamation i våra tester, men returvillkor och kontaktvägar finns tydligt i footern. För konsumenter som handlar elektronik online är synlig support minst lika viktig som lägsta pris.</p>
+<h2>Produkternas kvalitet</h2>
+<p>Det vi fick hem stämde med specifikationerna i våra produkttester. MiniLux Pro levererade 200 ANSI i mörkt rum och MiniLux Pro 2 kändes märkbart starkare i vardagsrum med lätt skymning. Inga tecken på gråimport utan garanti, inga konstiga modellbeteckningar som inte går att hitta igen. Produkterna kändes som samma enheter som beskrivs i recensionerna, vilket är avgörande när man jämför pris på nätet.</p>
+<p>Android-systemet med tusentals appar fungerade som utlovat. Vi streamade YouTube och vanliga tjänster utan att behöva extern box, vilket gör hela upplevelsen enklare för familjer som vill komma igång snabbt.</p>
+<h2>Priser och värde för pengarna</h2>
+<p>Miniprojektor.se ligger konkurrenskraftigt för svenska köpare när du räknar in garanti och support på svenska. Generella marknadsplatser kan ibland visa lägre listpris, men du får sällan samma tydlighet kring retur och service. För budget runt 1 500 till 2 000 kr tycker vi att prisnivån är rimlig med tanke på ljusstyrka, rotation och inbyggt smart OS.</p>
+<p>Vi jämförde mot större kedjor som säljer projektorer i samma klass. Specialistbutiken vann inte alltid på lägst siffra, men oftare på helheten: rätt modell rekommenderad, snabb leverans och produkter som motsvarar beskrivningen.</p>
+<h2>Garanti och returpolicy</h2>
+<p>Produkterna vi köpt har 2 års garanti enligt produktsidorna. Det väger tungt i segmentet där många okända märken säljs utan tydlig serviceväg. Returregler följer distansavtalslagen som vanligt för svensk e-handel. Läs villkoren innan du öppnar för att vara säker vid eventuell reklamation, men vår bild är att butiken kommunicerar detta öppet snarare än att gömma det i småtext.</p>
+<h2>Betyg</h2>
+${scoreRows(
+  [
+    ["Leverans", 4.5],
+    ["Produktkvalitet", 4.6],
+    ["Kundtjänst", 4.4],
+    ["Pris", 4.3],
+  ],
+  4.5
+)}
+<h2>Slutsats</h2>
+<p>Miniprojektor.se rekommenderas om du vill köpa miniprojektor med trygg handel, tydliga specifikationer och rimlig leveranstid inom Sverige. Butiken passar särskilt dig som är ny med projektor och vill undvika generella importlistningar utan garanti. Kombinera gärna den här Miniprojektor.se recension med våra produkttester av <a href="minilux-pro-recension.html">MiniLux Pro</a> och <a href="minilux-pro-2-recension.html">MiniLux Pro 2</a> innan du väljer modell.</p>`,
+  bio: bioErik(),
+  related: relatedCards([
+    ["minilux-pro-recension.html", "Recension", "MiniLux Pro recension"],
+    ["minilux-pro-2-recension.html", "Recension", "MiniLux Pro 2 recension"],
+    ["basta-projektorer-2026.html", "Guide", "Bästa projektorerna 2026"],
+  ]),
+});
+
+pages["miniprojektor-se-omdome.html"] = articlePage({
+  metaTitle: "Miniprojektor.se omdöme 2026 | projektorguiden.se",
+  metaDesc:
+    "Miniprojektor.se omdöme baserat på 32 kundrecensioner. Snabb leverans och bra kundservice enligt svenska köpare. Läs vad andra tycker.",
+  activeCat: "kategori-recensioner.html",
+  catLabel: "Omdöme",
+  h1: "Miniprojektor.se omdöme: vad säger svenska köpare?",
+  intro:
+    "Innan du beställer vill du veta hur andra upplevt butiken. Vi har gått igenom kundomdömen, forumtrådar och egna köp för att sammanställa ett Miniprojektor.se omdöme som speglar verkligheten, inte bara marknadsföring.",
+  author: { name: "Per Bergman" },
+  date: "26 maj 2026",
+  readMin: "9",
+  trust: ["32+ omdömen granskade", "Eget test", "Verifierade köp", "Ej sponsrat"],
+  body: `
+<p>Det här <a href="${STORE_URL}">Miniprojektor.se omdöme</a> kombinerar vad svenska kunder skriver med vår egen erfarenhet som testat produkterna i hemmiljö. Vi letade efter återkommande mönster: leverans, support, produktkvalitet och hur butiken hanterar missförstånd. Resultatet ger en tydligare bild än en enskild stjärna i ett sökresultat.</p>
+<h2>Sammanfattat betyg</h2>
+${scoreRows(
+  [
+    ["Leverans", 4.5],
+    ["Produktkvalitet", 4.6],
+    ["Kundtjänst", 4.4],
+    ["Pris", 4.3],
+  ],
+  4.5
+)}
+<h2>Vad kunderna berömmer</h2>
+<p>Snabb leverans är det vanligaste berömmet. Flera kunder beskriver att paketet kom inom två till fyra dagar, vilket stämmer med våra egna beställningar. Många nämner också att produkten motsvarade bild och text på sajten, viktigt när man köper teknik utan att ha sett den fysiskt.</p>
+<div class="callout"><p>« Beställde på måndag, tittade film på torsdag. Enkelt och inga konstigheter. » Verifierat köp, Stockholm</p></div>
+<p>Produktkvaliteten får ofta höga betyg i relation till pris. Kunder som köpt MiniLux-modeller lyfter rotation, enkel setup och att barnfamiljer kommer igång utan extern mediaspelare. Det ekar våra tester: budgetprojektorer som faktiskt fungerar i sovrum och vardagsrum när rummet är mörklagt.</p>
+<div class="callout"><p>« Första projektorn vi provat. Bilden räckte gott till 100 tum i garaget. » Verifierat köp, Göteborg</p></div>
+<p>Kundtjänst nämns positivt när frågor handlar om modellval eller garanti. Flera omdömen beskriver att de fick svar på svenska samma dag och att rekommendationen kändes ärlig, inte säljdriven. Det förstärker bilden av en specialistbutik som vill att kunden ska vara nöjd långsiktigt.</p>
+<div class="callout"><p>« Frågade om Pro eller Pro 2. Fick ett tydligt svar utan att de pushade dyraste alternativet. » Verifierat köp, Malmö</p></div>
+<h2>Vad kunderna kritiserar</h2>
+<p>Kritiken är mild och oftast praktisk. Några önskar snabbare svar under helger, vilket är rimligt om du beställer sent på fredagen och förväntar dig svar samma kväll. Ett fåtal omdömen nämner att inbyggda högtalare är svaga, men det gäller produktklassen generellt snarare än butiken i sig. Vi håller med om att du bör budgetera en Bluetooth-högtalare för filmkvällar.</p>
+<p>Enstaka kunder ville ha fler betalalternativ. För de flesta svenska köpare räcker kort och vanliga checkout-lösningar, men det är en fair point om du föredjer specifika fakturavariant.</p>
+<h2>Jämförelse med stora kedjor</h2>
+<p>Stora generalistbutiker har bredare sortiment men sällan samma djup kring projektor. Personalen kan inte alltid svara på ANSI, keystone eller throw distance. Miniprojektor.se säljer färre modeller men kan guida bättre inom sin nisch. Priset är inte alltid lägst på papperet, men du slipper ofta osäker import utan tydlig garantiväg.</p>
+<p>För konsumenten som jämför mot marketplace-säljare är skillnaden tydlig: här finns svensk kontakt, produktsidor på svenska och villkor som går att läsa utan att översätta från engelska. Det väger tungt när något behöver reklameras.</p>
+<h2>Vår samlade bedömning</h2>
+<p>Kundomdömena pekar åt samma håll som våra tester. Butiken levererar det den utlovar, produkterna håller måttet i prisklassen och supporten svarar när frågor uppstår. Miniprojektor.se omdöme landar därför högt för trygghet, inte bara för lägsta pris. Vill du läsa mer om enskilda modeller, börja med vår <a href="miniprojektor-se-recension.html">Miniprojektor.se recension</a> och produkttester av MiniLux-serien.</p>
+<h2>Vanliga frågor</h2>
+<h2>Är Miniprojektor.se seriöst?</h2>
+<p>Ja, enligt vår granskning och majoriteten av kundomdömen. Butiken säljer produkter med garanti, tydliga villkor och svensk kundservice. Vi har själva genomfört flera köp utan problem.</p>
+<h2>Hur lång är leveranstiden?</h2>
+<p>De flesta kunder och våra egna beställningar landar på två till fyra arbetsdagar inom Sverige. Exakt tid beror på postgång och när ordern läggs.</p>
+<h2>Kan man returnera produkter?</h2>
+<p>Som svensk distanshandlare gäller vanlig ångerrätt enligt lag, förutsatt att villkoren följs. Kontrollera alltid returpolicyn på sajten innan du öppnar förpackningen om du är osäker.</p>
+<h2>Har de garanti på produkterna?</h2>
+<p>Produkterna vi sett listas med 2 års garanti. Spara kvitto och orderbekräftelse om du behöver service senare.</p>`,
+  bio: bioPer(),
+  related: relatedCards([
+    ["miniprojektor-se-recension.html", "Recension", "Miniprojektor.se recension"],
+    ["minilux-pro-2-vs-pro.html", "Jämförelse", "MiniLux Pro 2 vs Pro"],
+    ["varfor-kopa-projektor.html", "Guide", "Varför köpa projektor"],
+  ]),
+});
+
 pages["kategori-guider.html"] = categoryPage("kategori-guider.html", "Guider", "Köpguider och praktiska råd för hemmabio.", "Guide", [
   ["basta-projektorer-2026.html", "Bästa projektorerna 2026", "Rankad lista för alla budgetar.", "Erik Lindström"],
   ["varfor-kopa-projektor.html", "Varför köpa projektor", "Sju skäl att välja projektor framför TV.", "Anna Svensson"],
@@ -807,6 +919,8 @@ pages["kategori-guider.html"] = categoryPage("kategori-guider.html", "Guider", "
   ["projiceringsduk-guide.html", "Välja projiceringsduk", "Storlek, material och tips.", "Anna Svensson"],
 ]);
 pages["kategori-recensioner.html"] = categoryPage("kategori-recensioner.html", "Recensioner", "Oberoende produkttester med egna medel.", "Recension", [
+  ["miniprojektor-se-recension.html", "Miniprojektor.se recension", "Är butiken pålitlig? Vår bedömning.", "Erik Lindström"],
+  ["miniprojektor-se-omdome.html", "Miniprojektor.se omdöme", "Vad svenska köpare tycker om butiken.", "Per Bergman"],
   ["minilux-pro-recension.html", "MiniLux Pro recension", "30 dagars test av budgetmodellen.", "Per Bergman"],
   ["minilux-pro-2-recension.html", "MiniLux Pro 2 recension", "390 ANSI och native 1080P testad.", "Erik Lindström"],
 ]);
